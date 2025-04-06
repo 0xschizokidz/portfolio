@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Muhammad Helmi Jamil's Portfolio
 
-## Getting Started
+Welcome to the official portfolio of **Muhammad Helmi Jamil**, a passionate **Blockchain Developer**. This portfolio showcases my skills, projects, and experience in blockchain development, smart contract programming, and decentralized application (DApp) development.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Muhammad Helmi Jamil's Portfolio](#muhammad-helmi-jamils-portfolio)
+  - [Table of Contents](#table-of-contents)
+  - [About Me](#about-me)
+  - [Skills](#skills)
+  - [Projects](#projects)
+  - [Certifications](#certifications)
+  - [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I'm a **Blockchain Developer** with experience in developing decentralized applications using Ethereum and various blockchain technologies. I have a background in smart contract development, including using **Foundry** for testing and deployment. My expertise also extends to frontend development using **Next.js**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I have worked on multiple personal projects, including yield farming platforms and trading card games, and am continually expanding my skills in the blockchain space.
 
-## Learn More
+## Skills
 
-To learn more about Next.js, take a look at the following resources:
+- **Blockchain Development**: Ethereum, Solidity, Smart Contracts, DeFi, dApps
+- **Frontend**: Next.js, React
+- **Smart Contract Development**: Foundry, Hardhat, Truffle
+- **Version Control**: Git, GitHub
+- **Programming Languages**: JavaScript, TypeScript, Solidity
+- **Others**: Web3.js, Ethers.js, TailwindCSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **[YieldSphere](#)**: A decentralized finance (DeFi) platform for yield farming, built using Ethereum and smart contracts. 
+2. **[Trading Card Game](#)**: A blockchain-based trading card game using Next.js, Ethereum, and NFTs. The game includes unique hero cards and in-game currency.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For more details, check out my [GitHub](https://github.com/0xschizokidz).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Certifications
+
+- **Certified Blockchain Developer - Ethereum (CBDE)**, Blockchain Training Alliance (BTA), March 2023
+- **Certified Blockchain Solution Architect (CBSA)**, Blockchain Training Alliance (BTA), Nov 2022
+- **Google Data Analytics Professional Certificate**, Coursera, Nov 2021
+
+## Contact
+
+- Email: [muhammadhelmijamil@gmail.com](mailto:muhammadhelmijamil@gmail.com)
+- LinkedIn: [m-helmi](https://www.linkedin.com/in/m-helmi/)
+- GitHub: [0xschizokidz](https://github.com/0xschizokidz)
+
+Feel free to reach out for any collaboration or inquiries!
