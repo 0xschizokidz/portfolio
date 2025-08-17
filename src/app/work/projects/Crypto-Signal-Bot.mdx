@@ -1,0 +1,43 @@
+---
+title: "15-Minute Crypto Signal Bot"
+publishedAt: "2025-07-03"
+summary: "An intraday crypto signal generator using RSI + EMA crossover and breakout strategies, with alerts and logging."
+team:
+  - name: "Muhammad Helmi Jamil"
+    role: "Full Stack Blockchain Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/helmi-jamil"
+link: ""
+---
+
+## Overview
+
+This bot scans 15-minute OHLCV data from OKX and generates buy/sell signals based on technical indicators. It supports multi-symbol scanning and sends real-time alerts.
+
+## Stack
+
+* **Languages**: Python
+* **Libraries**: ccxt, pandas, pandas-ta, ta, Telegram Bot API
+* **Optional**: SQLite or Google Sheets integration
+
+## Strategies
+
+* RSI < 30 = Buy; RSI > 70 = Sell
+* EMA crossover confirmation
+* Breakout strategy with trailing stop
+
+## Features
+
+* Multi-symbol scan (Top 20 OKX)
+* Telegram alerts (even when no signal)
+* Google Sheets logging
+
+## Status
+
+Fully functional with alerting and logging. Optional enhancements include better risk control and backtest dashboard.
+
+
+---
+
+
+
