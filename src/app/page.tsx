@@ -67,11 +67,42 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
-      </RevealFx>
+      {/* Featured Project Section */}
+      <Column fillWidth gap="l" paddingY="24">
+        <RevealFx translateY="16" delay={0.6}>
+          <Column fillWidth gap="m" paddingX="l">
+            <Heading as="h2" variant="display-strong-s" wrap="balance">
+              Featured Work
+            </Heading>
+            <Text onBackground="neutral-weak" variant="body-default-l">
+              Showcasing my latest blockchain and DApp development projects
+            </Text>
+          </Column>
+        </RevealFx>
+        <RevealFx translateY="20" delay={0.8}>
+          <Projects range={[1, 1]} />
+        </RevealFx>
+      </Column>
+
+      {/* Recent Projects Section */}
+      <Column fillWidth gap="l" paddingY="24">
+        <RevealFx translateY="16" delay={1.0}>
+          <Column fillWidth gap="m" paddingX="l">
+            <Heading as="h2" variant="display-strong-s" wrap="balance">
+              Recent Projects
+            </Heading>
+            <Text onBackground="neutral-weak" variant="body-default-l">
+              Latest developments in DeFi, NFTs, and decentralized applications
+            </Text>
+          </Column>
+        </RevealFx>
+        <RevealFx translateY="20" delay={1.2}>
+          <Projects range={[2, 4]} />
+        </RevealFx>
+      </Column>
+
       {routes["/blog"] && (
-        <Flex fillWidth gap="24" mobileDirection="column">
+        <Flex fillWidth gap="24" mobileDirection="column" paddingY="24">
           <Flex flex={1} paddingLeft="l" paddingTop="24">
             <Heading as="h2" variant="display-strong-xs" wrap="balance">
               Latest from the blog
@@ -82,7 +113,6 @@ export default function Home() {
           </Flex>
         </Flex>
       )}
-      <Projects range={[2]} />
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );

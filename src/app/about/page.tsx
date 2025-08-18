@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Avatar,
   Button,
@@ -17,15 +19,7 @@ import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 
-export async function generateMetadata() {
-  return Meta.generate({
-    title: about.title,
-    description: about.description,
-    baseURL: baseURL,
-    image: `/api/og/generate?title=${encodeURIComponent(about.title)}`,
-    path: about.path,
-  });
-}
+// Metadata generation removed for Client Component
 
 export default function About() {
   const structure = [
@@ -273,46 +267,37 @@ export default function About() {
                 as="h2"
                 id={about.technical.title}
                 variant="display-strong-s"
-                marginBottom="40"
+                marginBottom="24"
               >
                 {about.technical.title}
               </Heading>
-              <Column fillWidth gap="l">
+              <Flex fillWidth gap="20" wrap>
                 {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text id={skill.title} variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
-                    </Text>
-                    {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
-                          >
-                            <Media
-                              enlarge
-                              radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
-                      </Flex>
-                    )}
-                  </Column>
+                  <Tag
+                    key={`${skill.title}-${index}`}
+                    variant="neutral"
+                    size="l"
+                    style={{ 
+                      fontSize: '1.1rem', 
+                      padding: '12px 20px',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => {
+                        const target = e.target as HTMLElement;
+                        target.style.transform = 'scale(1.05)';
+                        target.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+                      }}
+                      onMouseLeave={(e) => {
+                        const target = e.target as HTMLElement;
+                        target.style.transform = 'scale(1)';
+                        target.style.boxShadow = 'none';
+                      }}
+                  >
+                    {skill.title}
+                  </Tag>
                 ))}
-              </Column>
+              </Flex>
             </>
           )}
         </Column>

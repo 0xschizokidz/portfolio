@@ -53,7 +53,7 @@ const home = {
   headline: <>Designing the Future, One Block at a Time</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4"></strong>DApp Planner</>,
+    title: <>Featured: <strong>DApp Planner</strong> - AI-Powered DApp Planning Tool</>,
     href: "/work/DApp-planner",
   },
   subline: (
@@ -153,36 +153,69 @@ const about = {
     title: "Technical skills",
     skills: [
       {
+        title: "Solidity",
+        description: <>Expert in writing secure and efficient smart contracts for Ethereum and EVM-compatible blockchains.</>,
+        images: [],
+      },
+      {
+        title: "Smart Contracts",
+        description: <>Developing and deploying decentralized applications with robust smart contract architecture.</>,
+        images: [],
+      },
+      {
+        title: "Foundry",
+        description: <>Advanced testing and deployment framework for Ethereum development with comprehensive tooling.</>,
+        images: [],
+      },
+      {
+        title: "Blockchain Architecture",
+        description: <>Designing scalable blockchain solutions and understanding consensus mechanisms.</>,
+        images: [],
+      },
+      {
+        title: "Ganache",
+        description: <>Local blockchain development and testing environment for rapid prototyping.</>,
+        images: [],
+      },
+      {
+        title: "Consensus Algorithm",
+        description: <>Deep understanding of various consensus mechanisms including PoW, PoS, and DPoS.</>,
+        images: [],
+      },
+      {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        description: <>Creating intuitive user interfaces and prototypes for decentralized applications.</>,
+        images: [],
+      },
+      {
+        title: "n8n",
+        description: <>Workflow automation and integration platform for connecting blockchain services.</>,
+        images: [],
+      },
+      {
+        title: "Node.js",
+        description: <>Backend development for blockchain applications and API integrations.</>,
+        images: [],
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        description: <>Building modern web applications and DApp frontends with React framework.</>,
+        images: [],
+      },
+      {
+        title: "Web3",
+        description: <>Integrating blockchain functionality into web applications with Web3 libraries.</>,
+        images: [],
+      },
+      {
+        title: "Github",
+        description: <>Version control and collaborative development for blockchain projects.</>,
+        images: [],
+      },
+      {
+        title: "Decentralized Application (DApp)",
+        description: <>Full-stack development of decentralized applications from smart contracts to user interfaces.</>,
+        images: [],
       },
     ],
   },
